@@ -6,6 +6,9 @@ function Nav(){
             <h2>Tickets</h2>
                 <nav>
                     <ul>
+                        <li><a href="/">Events</a></li>
+                    </ul>
+                    <ul>
                         <li>
                             <a href="/">login</a>
                         </li>
