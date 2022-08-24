@@ -1,23 +1,33 @@
 import React from "react";
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 function Nav(){
     return(
         <header>
-            <h2>Tickets</h2>
+            
                 <nav>
+                   <h2><a href="/">Tickets</a></h2> 
                     <ul>
-                        <li><a href="/">Events</a></li>
+                        <a href="/events">Events</a>
                     </ul>
                     <ul>
-                        <li>
-                            <a href="/">login</a>
-                        </li>
-                        <li>
-                            <a href="/">signup</a>
-                        </li>
+                        <a href="/login">Login/Signup</a>
                     </ul>
                 </nav> 
         </header>
+    )
+}
+
+function CustomLink({ to, children, ...props}) {
+    const resolvedPath = useResolvedPath(to)
+    const isActive = useMatch({path: resolvedPath.pathname, end: true })
+
+    return (
+        <li className={isActive ? "active" : ""}>
+            <Link to={to} {...props}>
+                {children}
+            </Link>
+        </li>
     )
 }
 
