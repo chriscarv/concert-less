@@ -4,7 +4,8 @@ function HomePage() {
 
     return(
         <div>
-            <img class="jumbotron" src={photo} alt="osc"></img>
+            
+            <img className="jumbotron" src={photo} alt="osc"></img>
         </div>
     )
 }

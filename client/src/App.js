@@ -2,6 +2,7 @@ import React from 'react';
 import NavBar from './components/Nav';
 import HomePage from './components/HomePage';
 import EventsPage from './components/EventsPage';
+import Login from './components/Login';
 //import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
     case "/events":
       component = <EventsPage />
       break
-
+    case "/login":
+      component = <Login />
   }
 
   
