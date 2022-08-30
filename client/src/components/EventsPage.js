@@ -4,7 +4,7 @@ import events from '../events';
 function EventsPage(){
     return(
      <>
-        <h1>Events page</h1>
+        <h1>Events</h1>
         <div className='col'>
             <div className='card'>
             { events.map( event => {

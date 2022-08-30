@@ -29,6 +29,7 @@ li {
 
 nav {
   display: inline-flex;
+  justify-content: center;
 }
 
 .jumbotron {
@@ -40,8 +41,16 @@ nav {
  margin-right: auto;
 
 }
+h1 {
+  display: flex;
+  color: white;
+  justify-content: center;
+}
 
-
+nav a{
+  color: white;
+  justify-content: center;
+}
 
 .card {
   display: block;
@@ -72,7 +81,10 @@ nav {
   margin-left: auto;
   margin-right: auto;
   background-color: antiquewhite;
+  margin-top: 2%;
   margin-bottom: 5%;
+  width: 20%;
+  padding: 1%;
 }
 .homepage {
   position: relative;
