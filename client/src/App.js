@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import NavBar from './components/Nav';
 import HomePage from './components/HomePage';
 import EventsPage from './components/EventsPage';
@@ -6,6 +6,7 @@ import Cart from './components/Cart';
 //import { Route, Routes } from "react-router-dom";
 
 function App() {
+  const [cartItems, setCartItems] = useState([]);
   let component 
   switch(window.location.pathname){
     case "/":
@@ -15,7 +16,7 @@ function App() {
       component = <EventsPage />
       break
     case "/cart":
-      component = <Cart />
+      component = <Cart cartItems={cartItems}></Cart>
   }
 
   

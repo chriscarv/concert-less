@@ -1,8 +1,11 @@
 import React from 'react';
+import { useState } from 'react';
 import events from '../events';
 
+
 function EventsPage(){
-    
+     
+    const [cartItems, setCartItems] = useState([]);
     return(
      <>
         <h1>Events</h1>
