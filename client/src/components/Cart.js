@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Login(){
+function Cart(){
 
     return(
         <h1>cart</h1>
     )
 }
 
-export default Login;
+export default Cart;

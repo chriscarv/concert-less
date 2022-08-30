@@ -2,6 +2,7 @@ import React from 'react';
 import events from '../events';
 
 function EventsPage(){
+    
     return(
      <>
         <h1>Events</h1>
