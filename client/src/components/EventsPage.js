@@ -14,6 +14,7 @@ function EventsPage(){
                     <img className='flyer' src={event.imgUrl} alt="alt" />
                     <p className='event'>{event.name}</p>
                     <p className='event'>{event.date}</p>
+                    <button className='buy'>Buy Now</button>
                     </div>
                     
                 )
