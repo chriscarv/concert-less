@@ -1,4 +1,5 @@
 import React from 'react';
+import events from '../events';
 
 function EventsPage(){
     return(
@@ -6,16 +7,18 @@ function EventsPage(){
         <h1>Events page</h1>
         <div className='col'>
             <div className='card'>
-                <img className='flyer' src={require('../images/bv9-1.jpeg')} alt='broken vow flyer' />
-                <p className='event '>Broken Vow</p>
-                <p className='event '>9-01</p>
-                <button className='buy'>Buy Tickets</button>
-            </div>
-            <div className='card'>
-                <img className='flyer' src={require('../images/ysd9-1jpeg.jpeg')} alt='your spirit dies flyer' />
-                <p className='event '>Your Spirit Dies</p>
-                <p className='event'>9-01</p>
-                <button className='buy'>Buy Tickets</button>
+            { events.map( event => {
+                return(
+                    
+                    <div key={event.id}>
+                    <img className='flyer' src={event.imgUrl} alt="alt" />
+                    <p className='event'>{event.name}</p>
+                    <p className='event'>{event.date}</p>
+                    </div>
+                    
+                )
+            })}
+
             </div>
 
         </div>
