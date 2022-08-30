@@ -1,11 +1,11 @@
 import React from 'react';
-import { useState } from 'react';
+//import { useState } from 'react';
 import events from '../events';
+import Cart from './Cart';
 
-
-function EventsPage(){
+function EventsPage(props){
      
-    const [cartItems, setCartItems] = useState([]);
+
     return(
      <>
         <h1>Events</h1>
@@ -13,7 +13,7 @@ function EventsPage(){
             <div className='card'>
             { events.map( event => {
                 return(
-                    
+                    <>
                     <div key={event.id}>
                     <img className='flyer' src={event.imgUrl} alt="alt" />
                     <p className='event'>{event.name}</p>
@@ -21,7 +21,8 @@ function EventsPage(){
                     <div className='event'>price: ${event.price} </div>
                     <button className='buy'>Buy Now</button>
                     </div>
-                    
+                    <Cart></Cart>
+                    </>
                 )
             })}
 
