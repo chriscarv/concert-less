@@ -1,18 +1,34 @@
 import React from 'react';
-import EventList from './EventList';
+import { useState } from 'react';
+import events from '../events';
 
-//import events from '../events';
 
-
-function EventsPage(props){
-     const { events } = props;
-
+function EventsPage(){
+     
+    const [cartItems, setCartItems] = useState([]);
     return(
-       <>
-       {events.map((event) => (
-        <EventList key={event.id} event={event}></EventList>
-       ))}
-       </>
+     <>
+        <h1>Events</h1>
+        <div className='col'>
+            <div className='card'>
+            { events.map( event => {
+                return(
+                    
+                    <div key={event.id}>
+                    <img className='flyer' src={event.imgUrl} alt="alt" />
+                    <p className='event'>{event.name}</p>
+                    <p className='event'>{event.date}</p>
+                    <div className='event'>price: ${event.price} </div>
+                    <button className='buy'>Buy Now</button>
+                    </div>
+                    
+                )
+            })}
+
+            </div>
+
+        </div>
+      </>   
     )
 }
 

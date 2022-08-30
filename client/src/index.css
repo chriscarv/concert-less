@@ -61,7 +61,7 @@ nav a{
   background-color: white;
   border-style: solid;
   border-width: 10px;
-  border-color: #FF2400;
+  border-color: red;
 }
 .event {
   display: block;
