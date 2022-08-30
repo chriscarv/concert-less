@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
 code {
@@ -31,9 +32,12 @@ nav {
 }
 
 .jumbotron {
+  position: absolute;
  height: 100vh;
  width: 100vw;
- width: auto;
+
+ margin-left: auto;
+ margin-right: auto;
 
 }
 
@@ -42,9 +46,11 @@ nav {
 .card {
   display: block;
   width: 50%;
-  padding: 10px;
+  padding: 2%;
   margin-left: auto;
   margin-right: auto;
+  background-color: white;
+ 
  
 }
 .event {
@@ -65,4 +71,33 @@ nav {
   margin-left: auto;
   margin-right: auto;
   background-color: antiquewhite;
+  margin-bottom: 5%;
+}
+.homepage {
+  position: relative;
+}
+
+.homepage p{
+  z-index: 100;
+  position: absolute;
+  color: rgb(200, 91, 91);
+  font-size: 24px;
+  font-weight: bold;
+  left: 150px;
+  top: 350px;
+  border: 10px;
+  border-color: black;
+}
+
+@media only screen and (max-width: 1000px) {
+  .flyer {
+    height: 40vh;
+    width: 32vh;
+  }
+}
+@media only screen and (max-width: 415px) {
+  .flyer {
+    height: 30vh;
+    width: 24vh;
+  }
 }
