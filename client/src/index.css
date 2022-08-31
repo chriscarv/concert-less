@@ -102,6 +102,13 @@ nav a{
   border: 10px;
   border-color: black;
 }
+.form {
+  position: absolute;
+}
+
+.formtext {
+  color: red;
+}
 
 @media only screen and (max-width: 1000px) {
   .flyer {
