@@ -6,12 +6,15 @@ function Nav(){
         <header>
             
                 <nav>
-                   <h2><a href="/">TicketLess</a></h2> 
                     <ul>
-                        <a href="/events">Events</a>
+                      <h2><a href="/">TicketLess</a></h2>   
+                    </ul>
+                   
+                    <ul>
+                        <h2><a href="/events">Events</a></h2>
                     </ul>
                     <ul>
-                        <a href="/cart">Cart</a>
+                        <h2><a href="/cart">Cart</a></h2>
                     </ul>
                 </nav> 
         </header>
