@@ -1,27 +1,27 @@
 import React from "react";
-//import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 function Nav(){
     return(
         <header>
             
                 <nav>
-                   <h2><a href="/">TicketLess</a></h2> 
+                   <h2><Link to="/">TicketLess</Link></h2> 
                     <ul>
-                        <a href="/events">Events</a>
+                        <CustomLink to="/events">Events</CustomLink>
                     </ul>
                     <ul>
-                        <a href="/cart">Cart</a>
+                        <CustomLink to="/cart">Cart</CustomLink>
                     </ul>
                 </nav> 
         </header>
     )
 }
 
-/*
-function CustomLink({ to, children, ...props}) {
-    const resolvedPath = useResolvedPath(to)
-    const isActive = useMatch({path: resolvedPath.pathname, end: true })
+
+function CustomLink({ to, children, ...props }){
+   const resolvedPath = useResolvedPath(to);
+   const isActive = useMatch({ path: resolvedPath.pathname })
 
     return (
         <li className={isActive ? "active" : ""}>
@@ -31,6 +31,5 @@ function CustomLink({ to, children, ...props}) {
         </li>
     )
 }
-*/
 
 export default Nav;
