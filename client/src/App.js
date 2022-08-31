@@ -6,17 +6,17 @@ import Cart from './components/Cart';
 //import { Route, Routes } from "react-router-dom";
 
 function App() {
-  //const [cartItems, setCartItems] = useState([]);
+  const [cartItems, setCartItems] = useState([]);
   let component 
   switch(window.location.pathname){
     case "/":
       component = <HomePage />
       break
     case "/events":
-      component = <EventsPage />
+      component = <EventsPage></EventsPage>
       break
     case "/cart":
-      component = <Cart />
+      component = <Cart/>
   }
 
   

@@ -82,7 +82,7 @@ nav a{
   margin-right: auto;
   background-color: antiquewhite;
   margin-top: 2%;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
   width: 20%;
   padding: 1%;
   border-radius: 1rem;
@@ -113,5 +113,8 @@ nav a{
   .flyer {
     height: 30vh;
     width: 24vh;
+  }
+  .buy {
+    width: 30%;
   }
 }
