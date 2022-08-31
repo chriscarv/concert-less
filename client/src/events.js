@@ -1,4 +1,4 @@
-const events =
+const events = 
 [
     {
         id: 1,
@@ -58,5 +58,6 @@ const events =
         imgUrl: require("../src/images/yot11-16.jpeg")
     }
 ]
+
 
 export default events;
